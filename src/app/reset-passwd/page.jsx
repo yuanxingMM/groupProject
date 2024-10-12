@@ -14,25 +14,16 @@ export default function Home() {
           <div id="stuff" className="col-12">
             <div className="d-flex flex-row justify-content-center h-100 p-0">
               <article className="col-sm-6 fs-4">
-                <form action="/" method="GET">
-                  <div className="d-flex flex-column p-3 mt-3 h-100">
-                    {/*<div className="mt-2">
-                      <label htmlFor="username">電話號碼/使用者名稱/Email:</label>
-                    </div>*/}
-                    <div className="mt-2">
-                      <input className="d-block w-100" type="text" id="username" name="username" data-id="123" placeholder="電話號碼/使用者名稱/Email"/>
+                <form action="sign-in" method="GET">
+                  <div className="d-flex flex-column justify-content-center p-3 mt-3 h-100">
+                    <div className="row justify-content-center mt-2">
+                      <label>重新設定密碼</label>
                     </div>
-                    {/*<div className="mt-2">
-                      <label htmlFor="password">密碼:</label>
-                    </div>*/}
-                    <div className="mt-2">
-                      <input className="d-block w-100" type="password" id="password" name="password" placeholder="密碼"/>
+                    <div className="row mt-2">
+                      <input className="d-block w-100" type="text" id="username" name="username" data-id="123" placeholder="電話號碼/Email"/>
                     </div>
-                    <div className="mt-3">
-                      <div className="d-flex flex-row justify-content-between">
-                        <button type="submit" className="btn btn-danger fs-5">登入</button>
-                        <a className="text-warning" href="reset-passwd">忘記密碼</a>
-                      </div>
+                    <div className="row mt-3">
+                      <button type="submit" className="col-12 btn btn-danger fs-5">發送新密碼</button>
                     </div>
                   </div>
                 </form>

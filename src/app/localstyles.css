@@ -43,7 +43,7 @@ article {
   }
 }
 
-/* layout when width reduces under 576px article already above section re-arrange height proportion */
+/* layout when width reduces under 576px section already above article re-arrange height proportion */
 @media screen and (max-width: 576px) {
   header {
     height: 10%;
