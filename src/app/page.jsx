@@ -1,4 +1,3 @@
-import Image from "next/image";
 import './localstyles.css'
 
 export default function Home() {
@@ -9,7 +8,7 @@ export default function Home() {
           <header className="col-12 order-first fs-1 align-content-center">
             <div className="d-flex justify-content-between ps-2 pe-4">
               <span id="blink1">小崗村生活雜貨 </span><span id="blink2">生</span><span id="blink3">活</span><span id="blink4">美</span><span id="blink5">好</span>
-              <a id="sign-in" href="china_taiwan" className="btn btn-info fs-5" role="button">會員登入/登記</a>
+              <a id="sign-in" href="sign-in" className="btn btn-info fs-5" role="button">會員登入/登記</a>
             </div>
           </header>
           <div id="stuff" className="col-12">
@@ -68,10 +67,6 @@ export default function Home() {
           <footer className="col-12 order-last align-content-center p-0">
             <div className="d-flex justify-content-between ps-2 pe-4">
               <span>我是footer</span>
-              <audio controls autoPlay loop>
-                <source src="audio/background.mp3" type="audio/mpeg"/>
-                Your browser does not support the audio element.
-              </audio>
             </div>
           </footer>
         </div>

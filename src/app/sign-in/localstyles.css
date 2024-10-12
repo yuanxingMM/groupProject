@@ -35,11 +35,11 @@ article {
   }
   section {
     width: 100% !important;
-    height: 65%;
+    height: 50%;
   }
   article {
     width: 100% !important;
-    height: 35%;
+    height: 50%;
   }
 }
 
@@ -62,7 +62,7 @@ article {
   }
 }
 
-/* layout when height reduce under 576px, specially take care carousel image or youtbue */
+/* layout when height reduce under 576px, specially take care carousel or youtube */
 @media screen and (max-height: 576px) {
   header {
     height: 15%;
