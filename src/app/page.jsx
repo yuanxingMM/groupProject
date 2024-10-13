@@ -3,12 +3,15 @@ import './localstyles.css'
 export default function Home() {
   return (
     <>
-      <main className="container h-100 ps-2 pt-0 pe-0 pb-0">
+      <main className="container h-100 ps-0 pt-0 pe-0 pb-0">
         <div className="row h-100 p-0">
           <header className="col-12 order-first fs-1 align-content-center">
             <div className="d-flex justify-content-between ps-2 pe-4">
               <span id="blink1">小崗村生活雜貨 </span><span id="blink2">生</span><span id="blink3">活</span><span id="blink4">美</span><span id="blink5">好</span>
-              <a id="sign-in" href="sign-in" className="btn btn-info fs-5" role="button">會員登入/登記</a>
+              <div >
+                <a id="sign-in" href="sign-in" className="btn bg-info fs-6 me-1" role="button">會員登入/註冊</a>
+                <a id="help" href="help" className="btn bg-info-subtle fs-6" role="button">協助</a>  
+              </div>
             </div>
           </header>
           <div id="stuff" className="col-12">

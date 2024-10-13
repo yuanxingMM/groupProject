@@ -3,7 +3,7 @@ import './localstyles.css'
 export default function Home() {
   return (
     <>
-      <main className="container h-100 ps-2 pt-0 pe-0 pb-0">
+      <main className="container h-100 ps-0 pt-0 pe-0 pb-0">
         <div className="row h-100 p-0">
           <header className="col-12 order-first fs-1 align-content-center">
             <div className="d-flex justify-content-between ps-2 pe-4">
@@ -16,22 +16,17 @@ export default function Home() {
               <article className="col-sm-6 fs-4">
                 <form action="/" method="GET">
                   <div className="d-flex flex-column p-3 mt-3 h-100">
-                    {/*<div className="mt-2">
-                      <label htmlFor="username">電話號碼/使用者名稱/Email:</label>
-                    </div>*/}
                     <div className="mt-2">
-                      <input className="d-block w-100" type="text" id="username" name="username" data-id="123" placeholder="電話號碼/使用者名稱/Email"/>
+                      <input className="d-block w-100" type="text" id="username" name="username" data-id="123" placeholder="電話號碼/登入名稱/Email"/>
                     </div>
-                    {/*<div className="mt-2">
-                      <label htmlFor="password">密碼:</label>
-                    </div>*/}
                     <div className="mt-2">
                       <input className="d-block w-100" type="password" id="password" name="password" placeholder="密碼"/>
                     </div>
                     <div className="mt-3">
                       <div className="d-flex flex-row justify-content-between">
                         <button type="submit" className="btn btn-danger fs-5">登入</button>
-                        <a className="text-warning" href="reset-passwd">忘記密碼</a>
+                        <a className="btn btn-primary fs-6" href="reset-passwd">忘記密碼</a>
+                        <a className="btn btn-warning fs-5" href="registration">新會員註册</a>
                       </div>
                     </div>
                   </div>

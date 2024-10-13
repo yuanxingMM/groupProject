@@ -1,0 +1,187 @@
+/* basic layout */
+body {
+  height: 100vh; width: 100vw
+}
+header {
+  height: 15%;
+  background-color: rgba(0, 255, 47, 0.99);
+}
+footer {
+  background-color: rgba(191, 0, 255, 0.259);
+  height: 10%;
+}
+#stuff {
+  height: 75%;
+  background-image: url("/images/小崗村.jpg");
+  background-size: cover;
+  background-position: center;
+}
+article {
+  height: 100%;
+  background: transparent;
+  overflow: scroll;
+}
+form {
+  background: transparent;
+}
+
+/* layout for portrait orientation, article above section, re-arrange height propotion */
+@media screen and (orientation: portrait) {
+  header {
+    height: 10%;
+  }
+  footer {
+    height: 7%;
+  }
+  #stuff {
+    height: 83%;
+  }
+  section {
+    width: 100% !important;
+    height: 50%;
+  }
+  article {
+    width: 100% !important;
+    height: 50%;
+  }
+}
+
+/* layout when width reduces under 576px, re-arrange height proportion */
+@media screen and (max-width: 576px) {
+  header {
+    height: 10%;
+  }
+  footer {
+    height: 7%;
+  }
+  #stuff {
+    height: 83%;
+  }
+/*  section {
+    height: 45%;
+  }
+  article {
+    height: 55%;
+  }*/
+}
+
+/* layout when height reduce under 576px, specially take care carousel or youtube */
+@media screen and (max-height: 576px) {
+  header {
+    height: 15%;
+  }
+  footer {
+    height: 15%;
+  }
+  #stuff {
+    height: 70%;
+  }
+  .carouselImage {
+    height: 70vh;
+    object-fit: cover;
+  }
+  #youtube {
+    height: 70vh;
+    object-fit: cover;
+  }
+}
+
+/* style overide bootstrap carousel caption and button */
+div.carousel-caption h1{
+  letter-spacing: 0.9em;
+}
+.carousel-control-next, .carousel-control-prev {
+  width: 30%;
+}
+.carousel-control-prev-icon 
+{
+  width: 130px;
+  height: 130px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f00'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")*/;
+}
+.carousel-control-next-icon
+{
+  width: 130px;
+  height: 130px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f00'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")*/;
+}
+.carousel-caption {
+  color: #ff0000;
+  top: 0;
+  bottom: auto;
+}
+
+/* header background animation */
+@keyframes bannerBackground {
+  0% {background-color: rgba(0, 255, 47, 0.99);}
+  12%  {background-color:rgba(0, 255, 238, 0.99);}
+  25%  {background-color:rgba(13, 0, 255, 0.165);}
+  38%  {background-color:rgba(255, 0, 230, 0.776);}
+  50% {background-color:rgba(234, 0, 255, 0.883);}
+  62% {background-color:rgba(255, 72, 0, 0.96);}
+  75% {background-color:rgba(229, 255, 0, 0.99);}
+  100% {background-color: rgba(255, 204, 0, 0.752);}
+}
+header {
+  animation-name: bannerBackground;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes blinkText1 {
+  0% {visibility: hidden; opacity: 0;}
+  10% {visibility: visible; opacity: 1;}
+}
+@keyframes blinkText2 {
+  0% {visibility: hidden; opacity: 0;}
+  20% {visibility: visible; opacity: 1;}
+}
+@keyframes blinkText3 {
+  0% {visibility: hidden; opacity: 0;}
+  30% {visibility: visible; opacity: 1;}
+}
+@keyframes blinkText4 {
+  0% {visibility: hidden; opacity: 0;}
+  40% {visibility: visible; opacity: 1;}
+}
+@keyframes blinkText5 {
+  0% {visibility: hidden; opacity: 0;}
+  50% {visibility: visible; opacity: 1;}
+}
+@keyframes blinkText6 {
+  0% {visibility: hidden; opacity: 0;}
+  60% {visibility: visible; opacity: 1;}
+}
+@keyframes blinkText7 {
+  0% {visibility: hidden; opacity: 0;}
+  70% {visibility: visible; opacity: 1;}
+}
+#blink1{
+  visibility: hidden; opacity: 0;
+  animation: blinkText1 9s steps(1, end) infinite ;
+}
+#blink2{
+  visibility: hidden; opacity: 0;
+  animation: blinkText2 9s steps(1, end) infinite ;
+}
+#blink3{
+  visibility: hidden; opacity: 0;
+  animation: blinkText3 9s steps(1, end) infinite ;
+}
+#blink4{
+  visibility: hidden; opacity: 0;
+  animation: blinkText4 9s steps(1, end) infinite ;
+}
+#blink5{
+  visibility: hidden; opacity: 0;
+  animation: blinkText5 9s steps(1, end) infinite ;
+}
+#blink6{
+  visibility: hidden; opacity: 0;
+  animation: blinkText6 9s steps(1, end) infinite ;
+}
+#blink7{
+  visibility: hidden; opacity: 0;
+  animation: blinkText7 9s steps(1, end) infinite ;
+}
+
+
