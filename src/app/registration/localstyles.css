@@ -5,6 +5,7 @@ body {
 header {
   height: 15%;
   background-color: rgba(0, 255, 47, 0.99);
+  font-size: 4vw;
 }
 footer {
   background-color: rgba(191, 0, 255, 0.259);
@@ -19,8 +20,13 @@ footer {
 article {
   height: 100%;
   background: transparent;
+  font-size: 2vw;
   overflow: scroll;
 }
+#sign-in, #help, #back-to-main {
+  font-size: 2vw;
+}
+
 form {
   background: transparent;
 }
@@ -36,20 +42,13 @@ form {
   #stuff {
     height: 83%;
   }
-  section {
-    width: 100% !important;
-    height: 50%;
-  }
-  article {
-    width: 100% !important;
-    height: 50%;
-  }
 }
 
 /* layout when width reduces under 576px, re-arrange height proportion */
 @media screen and (max-width: 576px) {
   header {
     height: 10%;
+    font-size: 5vw;
   }
   footer {
     height: 7%;
@@ -57,12 +56,12 @@ form {
   #stuff {
     height: 83%;
   }
-/*  section {
-    height: 45%;
-  }
   article {
-    height: 55%;
-  }*/
+    font-size: 4vw;
+  }
+  #sign-in, #help, #back-to-main {
+    font-size: 3vw;
+  }
 }
 
 /* layout when height reduce under 576px, specially take care carousel or youtube */
@@ -75,14 +74,6 @@ form {
   }
   #stuff {
     height: 70%;
-  }
-  .carouselImage {
-    height: 70vh;
-    object-fit: cover;
-  }
-  #youtube {
-    height: 70vh;
-    object-fit: cover;
   }
 }
 

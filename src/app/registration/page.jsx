@@ -5,15 +5,20 @@ export default function Home() {
     <>
       <main className="container h-100 ps-0 pt-0 pe-0 pb-0">
         <div className="row h-100 p-0">
-          <header className="col-12 order-first fs-1 align-content-center">
-            <div className="d-flex justify-content-between ps-2 pe-4">
-              <span id="blink1">小崗村生活雜貨 </span><span id="blink2">生</span><span id="blink3">活</span><span id="blink4">美</span><span id="blink5">好</span>
-              <a id="go-home" href="/" className="btn btn-info fs-5" role="button">返回主頁</a>
+          <header className="col-12 order-first align-content-center">
+            <div className="d-flex flex-row justify-content-between ps-2 pe-2">
+              <div className="d-flex flex-row justify-content-start">
+                <span id="blink1">小崗村生活雜貨 </span><span id="blink2">生</span><span id="blink3">活</span><span id="blink4">美</span><span id="blink5">好</span>
+              </div>
+              <div >
+                <a id="back-to-main" href="/" className="btn bg-info  me-1" role="button">返回主頁</a>
+                <a id="help" href="help" className="btn bg-info-subtle" role="button">協助</a>  
+              </div>
             </div>
           </header>
           <div id="stuff" className="col-12">
             <div className="d-flex flex-row justify-content-center h-100 p-0">
-              <article className="col-sm-6 fs-4">
+              <article className="col-sm-6">
                 <form action="sign-in" method="GET">
                   <div className="d-flex flex-column justify-content-center p-3 mt-3 h-100 bg-primary">
                     <div className="row justify-content-center mt-2">
@@ -41,7 +46,7 @@ export default function Home() {
                       <input className="d-block w-100" type="password" id="password_too" name="password_too" placeholder="請再次輸入以上密碼"/>
                     </div>
                     <div className="row mt-3">
-                      <button type="submit" className="col-12 btn btn-danger fs-5">註冊</button>
+                      <button type="submit" className="col-12 btn btn-danger">註冊</button>
                     </div>
                   </div>
                 </form>

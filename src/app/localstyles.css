@@ -5,6 +5,7 @@ body {
 header {
   height: 15%;
   background-color: rgba(0, 255, 47, 0.99);
+  font-size: 4vw;
 }
 footer {
   background-color: rgba(191, 0, 255, 0.259);
@@ -20,6 +21,9 @@ section {
 article {
   height: 100%;
   background-color: rgba(85, 0, 255, 0.247); overflow-y: scroll;
+}
+#sign-in, #help, #back-to-main {
+  font-size: 2vw;
 }
 
 /* layout for portrait orientation, article above section, re-arrange height propotion */
@@ -47,6 +51,7 @@ article {
 @media screen and (max-width: 576px) {
   header {
     height: 10%;
+    font-size: 5vw;
   }
   footer {
     height: 7%;
@@ -55,14 +60,17 @@ article {
     height: 83%;
   }
   section {
-    height: 45%;
+    height: 65%;
   }
   article {
-    height: 55%;
+    height: 35%;
+  }
+  #sign-in, #help, #back-to-main {
+    font-size: 3vw;
   }
 }
 
-/* layout when height reduce under 576px, specially take care carousel image or youtbue */
+/* layout when height reduce under 576px, specially take care carousel image*/
 @media screen and (max-height: 576px) {
   header {
     height: 15%;
@@ -75,11 +83,7 @@ article {
   }
   .carouselImage {
     height: 70vh;
-    object-fit: cover;
-  }
-  #youtube {
-    height: 70vh;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 

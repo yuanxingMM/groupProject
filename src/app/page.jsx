@@ -5,12 +5,14 @@ export default function Home() {
     <>
       <main className="container h-100 ps-0 pt-0 pe-0 pb-0">
         <div className="row h-100 p-0">
-          <header className="col-12 order-first fs-1 align-content-center">
-            <div className="d-flex justify-content-between ps-2 pe-4">
-              <span id="blink1">小崗村生活雜貨 </span><span id="blink2">生</span><span id="blink3">活</span><span id="blink4">美</span><span id="blink5">好</span>
+          <header className="col-12 order-first align-content-center">
+            <div className="d-flex flex-row justify-content-between ps-2 pe-2">
+              <div className="d-flex flex-row justify-content-start">
+                <span id="blink1">小崗村生活雜貨 </span><span id="blink2">生</span><span id="blink3">活</span><span id="blink4">美</span><span id="blink5">好</span>
+              </div>
               <div >
-                <a id="sign-in" href="sign-in" className="btn bg-info fs-6 me-1" role="button">會員登入/註冊</a>
-                <a id="help" href="help" className="btn bg-info-subtle fs-6" role="button">協助</a>  
+                <a id="sign-in" href="sign-in" className="btn bg-info  me-1" role="button">會員登入/註冊</a>
+                <a id="help" href="help" className="btn bg-info-subtle" role="button">協助</a>  
               </div>
             </div>
           </header>
