@@ -1,0 +1,33 @@
+.wrapCon {
+    border: 1px dashed rgb(147, 122, 122);
+    margin: 0 auto;
+    min-width: 300px;
+    width: 80%;
+    display: block;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    margin: 20px auto;
+    border: 1px seashell solie;
+
+    .chart {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        display: inline-block;
+        width: 30%;
+        height: 40%;
+        margin: 0 auto;
+        
+    }
+
+}

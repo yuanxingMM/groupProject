@@ -24,8 +24,4 @@ page7 reset password
 
 page8 forget password
 
-page9 
-
-page10
-
-shoppig page11-page15
+page9-page15 shopping

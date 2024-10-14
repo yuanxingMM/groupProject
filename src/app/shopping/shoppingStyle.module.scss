@@ -1,0 +1,15 @@
+.wrapCon {
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .wrapCon {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .wrapCon {
+        font-size: 0.7rem;
+    }
+}
