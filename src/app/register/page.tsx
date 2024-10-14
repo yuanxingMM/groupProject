@@ -53,8 +53,12 @@ const Register = () => {
                                             <label>新會員註冊</label>
                                         </div>
                                         <div className="row mt-2">
-                                            <input className="d-block w-100" type="text" id="email" name="email" placeholder="請輸入電郵"
+                                            <input className="d-block w-100" type="text" id="email" name="username" placeholder="請輸入username"
                                                 value={username} onChange={(e) => setUsername(e.target.value)} />
+                                        </div>
+                                        <div className="row mt-2">
+                                            <input className="d-block w-100" type="text" id="email" name="email" placeholder="請輸入電郵"
+                                                value={email} onChange={(e) => setEmail(e.target.value)} />
                                         </div>
                                         <div className="row mt-2">
                                             <input className="d-block w-100" type="password" id="password" name="password" placeholder="請輸入密碼"
