@@ -28,8 +28,8 @@ const Page = () => {
 
         setIsSending(true);
         try {
-            
-               const res = await fetchApi(`/api/register/change-password`, {
+
+            const res = await fetchApi(`/api/register/change-password`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,
@@ -54,25 +54,56 @@ const Page = () => {
 
     return (
         <div>
-            <h2>Change Password</h2>
-            <form onSubmit={handleSubmit}>
-                <input
-                    type="password"
-                    placeholder="Enter new password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                />
-                <input
-                    type="password"
-                    placeholder="Confirm new password"
-                    value={confirmPassword}
-                    onChange={(e) => setConfirmPassword(e.target.value)}
-                    required
-                />
-                <button type="submit">Change Password</button>
-            </form>
-            {message && <p>{message}</p>}
+            <main className="container h-100 ps-0 pt-0 pe-0 pb-0">
+                <div className="row h-100 p-0">
+                    <header className="col-12 order-first align-content-center">
+                        <div className="d-flex flex-row justify-content-between ps-2 pe-2">
+                            <div className="d-flex flex-row justify-content-start">
+                                <span id="blink1">小崗村生活雜貨 </span><span id="blink2">生</span><span id="blink3">活</span><span id="blink4">美</span><span id="blink5">好</span>
+                            </div>
+                            <div >
+                                <a id="back-to-main" href="/" className="btn bg-info  me-1" role="button">返回主頁</a>
+                                <a id="help" href="help" className="btn bg-info-subtle" role="button">協助</a>
+                            </div>
+                        </div>
+                    </header>
+                    <div id="stuff" className="col-12">
+                        <div className="d-flex flex-row justify-content-center h-100 p-0">
+                            <article className="col-sm-6">
+                                <form action="sign-in" method="POST" onSubmit={handleSubmit}>
+                                    <div className="d-flex flex-column justify-content-center p-3 mt-3 h-100">
+                                        <div className="row justify-content-center mt-2">
+                                            <label>修改密碼</label>
+                                        </div>
+                                        <div className="row mt-2">
+
+                                            <input className="d-block w-100" type='password' name="password" placeholder="Enter new password"
+                                                value={password}
+                                                onChange={(e) => setPassword(e.target.value)}
+                                                required />
+                                        </div>
+                                        <div className="row mt-2">
+
+                                            <input className="d-block w-100" type='password' name="password" placeholder="Confirm new password"
+                                                value={confirmPassword}
+                                                onChange={(e) => setConfirmPassword(e.target.value)}
+                                                required />
+                                        </div>
+                                        <div className="row mt-3">
+                                            <button type="submit" className="col-12 btn btn-danger">修改密码</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </article>
+                        </div>
+                    </div>
+                    <footer className="col-12 order-last align-content-center p-0">
+                        <div className="d-flex justify-content-between ps-2 pe-4">
+                            <span>我是footer</span>
+                        </div>
+                    </footer>
+                </div>
+            </main>
         </div>
     );
 };

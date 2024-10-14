@@ -35,7 +35,7 @@ function NavBar() {
                         style={{ maxHeight: '200px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="/">首页</Nav.Link>
+                        <Nav.Link href="/shopping">首页</Nav.Link>
                         <NavDropdown title="买家中心" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="/checkOut" onClick={handleClick}>
                                 购物车
@@ -84,7 +84,7 @@ function NavBar() {
                                 我的商品
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#">
+                        <Nav.Link href="/help">
                             帮助中心
                         </Nav.Link>
                     </Nav>
