@@ -10,11 +10,11 @@ import { toast } from 'react-toastify';
 import { useAuth } from '../../context/AuthContext';
 function NavBar() {
     const { isAuthenticated, logout } = useAuth();
-    const [expanded, setExpanded] = useState(false); 
-    
+    const [expanded, setExpanded] = useState(false);
+
     const handleLogout = () => {
-        logout(); 
-        setExpanded(false); 
+        logout();
+        setExpanded(false);
     };
 
     const handleClick = (e: React.MouseEvent) => {
@@ -27,7 +27,7 @@ function NavBar() {
         <Navbar expanded={expanded} collapseOnSelect expand="md" className="bg-body-tertiary">
             <Container fluid>
                 <Navbar.Toggle aria-controls="navbarScroll"
-                    onClick={() => setExpanded(expanded => !expanded)} 
+                    onClick={() => setExpanded(expanded => !expanded)}
                 />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -86,6 +86,12 @@ function NavBar() {
                         </NavDropdown>
                         <Nav.Link href="/help">
                             帮助中心
+                        </Nav.Link>
+                        <Nav.Link href="/about">
+                            About
+                        </Nav.Link>
+                        <Nav.Link href="/contact">
+                            Contact
                         </Nav.Link>
                     </Nav>
                     <Form className="d-flex">

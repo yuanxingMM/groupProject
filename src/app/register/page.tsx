@@ -3,7 +3,7 @@ import { useState } from 'react';
 import fetchApi from '../../utils/fetchUtil';
 import LoadingComponent from '../component/shopping/LoadingComponent';
 import { toast } from 'react-toastify';
-import './localstyles.css'
+import './localstyles.css';
 const Register = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -86,12 +86,6 @@ const Register = () => {
                 </div>
             </main>
         </div>
-        // <form onSubmit={handleSubmit}>
-        //     <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="userName" />
-        //     <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="邮箱" />
-        //     <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="密码" />
-        //     <button type="submit">注册</button>
-        // </form>
     );
 };
 
