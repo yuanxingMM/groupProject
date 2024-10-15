@@ -71,7 +71,7 @@ const Login = () => {
                                         <div className="mt-3">
                                             <div className="d-flex flex-row justify-content-between">
                                                 <button type="submit" className="btn btn-danger">login</button>
-                                                <a className="btn btn-primary" href="reset-password">忘記密碼</a>
+                                                <a className="btn btn-primary" href="forgetPassword">忘記密碼</a>
                                                 <a className="btn btn-warning" href="/register">新會員註册</a>
                                             </div>
                                         </div>
