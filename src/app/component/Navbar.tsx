@@ -47,16 +47,6 @@ function NavBar() {
                                 我的足迹
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="Favorite" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#" onClick={handleClick}>
-                                Favorite items
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#" onClick={handleClick}>
-                                Favorite stores
-                            </NavDropdown.Item>
-
-                        </NavDropdown>
-
                         <NavDropdown title="Account" id="navbarScrollingDropdown">
                             {isAuthenticated ? (
                                 <NavDropdown.Item onClick={handleLogout}>登出</NavDropdown.Item>

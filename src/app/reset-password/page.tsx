@@ -3,7 +3,8 @@
 import { useState, useEffect, Suspense } from 'react';
 import fetchApi from '../../utils/fetchUtil';
 import { useRouter, useSearchParams } from 'next/navigation';
-
+import Script from "next/script";
+import './localstyles.css';
 const ResetPassword = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -61,8 +62,7 @@ const ResetPassword = () => {
   }
 
   return (
-    <div>
-
+    <>
       <main className="container h-100 ps-0 pt-0 pe-0 pb-0">
         <div className="row h-100 p-0">
           <header className="col-12 order-first align-content-center">
@@ -71,7 +71,7 @@ const ResetPassword = () => {
                 <span id="blink1">小崗村生活雜貨 </span><span id="blink2">生</span><span id="blink3">活</span><span id="blink4">美</span><span id="blink5">好</span>
               </div>
               <div >
-                <a id="back-to-main" href="/shopping" className="btn bg-info  me-1" role="button">返回主頁</a>
+                <a id="back-to-main" href="/" className="btn bg-info  me-1" role="button">返回主頁</a>
                 <a id="help" href="help" className="btn bg-info-subtle" role="button">協助</a>
               </div>
             </div>
@@ -113,7 +113,8 @@ const ResetPassword = () => {
           </footer>
         </div>
       </main>
-    </div>
+      <Script src="/scripts/bootstrap.js" strategy="beforeInteractive" />
+    </>
   );
 };
 
