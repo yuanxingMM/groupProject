@@ -44,7 +44,9 @@ const EditDisplayProductContent = () => {
         try {
             let userId = getUserId();
             const extraUrl: string = userId ? `?userId=${userId}` : ``;
-            const data = await fetchApi(`/api/productRoute/detail/${productId}${extraUrl}`);
+            const data = await fetchApi(`/api/productRoute/detail/${productId}${extraUrl}`,{
+                method:'POST',
+            });
             const product = data.data;
 
             

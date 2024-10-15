@@ -8,20 +8,21 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'next/image';
-import styles from './product.module.scss';  
+import styles from './product.module.scss';
 import RichTextComponent from '../../component/RichTextComponent/RichTextComponent';
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 import fetchApi from '../../../utils/fetchUtil';
 import { Button } from 'react-bootstrap';
 import { getToken } from '../../../utils/dataUtils';
+import { getUserId } from '../../../utils/dataUtils';
 
 const ProductPage = ({ params }: { params: { productId: string } }) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
   const [productData, setProductData] = useState<MoreProductItemData | null>(null);
   const [largeImageSrc, setLargeImageSrc] = useState<string>('');
-  const [selectedIndex, setSelectedIndex] = useState<number>(0);  
+  const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [images, setImages] = useState<string[]>([]);
 
   const handleMouseOver = (index: number) => {
@@ -37,10 +38,16 @@ const ProductPage = ({ params }: { params: { productId: string } }) => {
   const fetchProductsData = useCallback(async () => {
     if (params.productId) {
       try {
-        const data = await fetchApi(`/api/productRoute/detail/${params.productId}`);
+        const userId = getUserId();
+        const data = await fetchApi(`/api/productRoute/detail/${params.productId}`, {
+          method:'POST',
+          body: {
+            userId,
+          }
+        });
         setImages(data.data.mainImages);
         setProductData(data.data);
-        setLargeImageSrc(data.data.mainImages[0]);  
+        setLargeImageSrc(data.data.mainImages[0]);
         setIsLoading(false);
       } catch (error) {
         console.error('Error fetching category data:', error);
