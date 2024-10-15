@@ -74,7 +74,7 @@ function NavBar() {
                                 我的商品
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="/help">
+                        {/* <Nav.Link href="/help">
                             帮助中心
                         </Nav.Link>
                         <Nav.Link href="/about">
@@ -82,7 +82,7 @@ function NavBar() {
                         </Nav.Link>
                         <Nav.Link href="/contact">
                             Contact
-                        </Nav.Link>
+                        </Nav.Link> */}
                     </Nav>
                     <Form className="d-flex">
                         <Form.Control
