@@ -97,11 +97,11 @@ const Page = () => {
                             </article>
                         </div>
                     </div>
-                    <footer className="col-12 order-last align-content-center p-0">
+                    {/* <footer className="col-12 order-last align-content-center p-0">
                         <div className="d-flex justify-content-between ps-2 pe-4">
                             <span>我是footer</span>
                         </div>
-                    </footer>
+                    </footer> */}
                 </div>
             </main>
         </div>

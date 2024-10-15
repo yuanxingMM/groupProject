@@ -41,7 +41,7 @@ const Register = () => {
                             </div>
                             <div >
                                 <a id="back-to-main" href="/" className="btn bg-info  me-1" role="button">返回主頁</a>
-                                <a id="help" href="help" className="btn bg-info-subtle" role="button">協助</a>
+                                <a id="help" href="/help" className="btn bg-info-subtle" role="button">協助</a>
                             </div>
                         </div>
                     </header>
@@ -79,11 +79,11 @@ const Register = () => {
                             </article>
                         </div>
                     </div>
-                    <footer className="col-12 order-last align-content-center p-0">
+                    {/* <footer className="col-12 order-last align-content-center p-0">
                         <div className="d-flex justify-content-between ps-2 pe-4">
                             <span>我是footer</span>
                         </div>
-                    </footer>
+                    </footer> */}
                 </div>
             </main>
             <Script src="/scripts/bootstrap.js" strategy="beforeInteractive" />
