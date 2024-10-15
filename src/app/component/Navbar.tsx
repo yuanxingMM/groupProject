@@ -35,43 +35,43 @@ function NavBar() {
                         style={{ maxHeight: '200px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="/shopping">首页</Nav.Link>
-                        <NavDropdown title="买家中心" id="navbarScrollingDropdown">
+                        <Nav.Link href="/shopping">Shopping Home</Nav.Link>
+                        <NavDropdown title="Buyer Center" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="/checkOut" onClick={handleClick}>
-                                购物车
+                                Cart
                             </NavDropdown.Item>
                             <NavDropdown.Item href="/myOrders" onClick={handleClick}>
-                                我的订单
+                                Purchase History
                             </NavDropdown.Item>
                             <NavDropdown.Item href="/myHistory" onClick={handleClick}>
-                                我的足迹
+                                Browser History
                             </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Account" id="navbarScrollingDropdown">
                             {isAuthenticated ? (
-                                <NavDropdown.Item onClick={handleLogout}>登出</NavDropdown.Item>
+                                <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
                             ) : (
-                                <NavDropdown.Item href="../../login">登入</NavDropdown.Item>
+                                <NavDropdown.Item href="../../login">Login</NavDropdown.Item>
                             )}
                             <NavDropdown.Item href="/register">
-                                注册
+                                Register
                             </NavDropdown.Item>
                             <NavDropdown.Item href="/changePassword" onClick={handleClick}>
-                                修改密码
+                                Change Password
                             </NavDropdown.Item>
                             <NavDropdown.Item href="/forgetPassword">
-                                忘记密码
+                                Forget Password
                             </NavDropdown.Item>
                             {/* <NavDropdown.Item href="/resetPassword" onClick={handleClick}>
                                 重置密码
                             </NavDropdown.Item> */}
                         </NavDropdown>
-                        <NavDropdown title="卖家中心" id="navbarScrollingDropdown">
+                        <NavDropdown title="Seller Center" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="/displayProduct" onClick={handleClick}>
-                                发布新品
+                                Publish Product
                             </NavDropdown.Item>
                             <NavDropdown.Item href="/myPublishedProduct" onClick={handleClick}>
-                                我的商品
+                                My Published Product
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="/help">
