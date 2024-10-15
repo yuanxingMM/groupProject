@@ -41,8 +41,8 @@ const ForgotPassword = () => {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required />
+                                   <Button type="submit">Send Reset Password Link</Button>
                     </form>
-                    <Button type="submit">Send Reset Password Link</Button>
                 </div>
                 <div className="footer">
                     <h5>New here? <a href="/register">Sign Up.</a></h5>
