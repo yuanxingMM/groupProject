@@ -1,0 +1,1 @@
+NEXT_PUBLIC_API_URL=https://api.mymian.com:9230
